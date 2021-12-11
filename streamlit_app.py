@@ -1,6 +1,5 @@
 import streamlit as st
 
-with st.echo(code_location='below'):
     st.title("IndicNLP!")
     st.text("This is our Final Year Project,")
     st.text("Implementing various features of NLP i.e,")
