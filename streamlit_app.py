@@ -29,7 +29,7 @@ with st.echo(code_location='below'):
         st.success("work's in progress :construction:, Come again later :smiley:")
     
     st.header('Grammar Correction :- ')
-    grm_ip = st.text_input('Enter a Statement')
+    grm_ip = st.text_input('Enter the Statement')
     grm_btn = st.button("Check Grammar")
     if grm_btn:
         st.write("work's in progress :construction:, Come again later :smiley:")
