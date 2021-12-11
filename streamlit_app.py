@@ -24,13 +24,13 @@ with st.echo(code_location='below'):
     st.header('Question & Answering :- ')
     text = st.text_area("Text to analyze")
     que_ip = st.text_input('Enter the question')
-    qna_btn = st.button("Process")
+    qna_btn = st.button("Answer")
     if qna_btn:
         st.success("work's in progress :construction:, Come again later :smiley:")
     
     st.header('Grammar Correction :- ')
     grm_ip = st.text_input('Enter a Statement')
-    grm_btn = st.button("Process")
+    grm_btn = st.button("Check Grammar")
     if grm_btn:
         st.write("work's in progress :construction:, Come again later :smiley:")
     
