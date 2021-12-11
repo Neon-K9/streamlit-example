@@ -1,20 +1,12 @@
 import streamlit as st
 
-"""
-# IndicNLP!
-
-This is our Final Year Project,
-Implementing various features of NLP i.e,
-Natural Language Processing in Various Indic Languages.
-To Begin with Hindi.
-Here are Few Modules we have Implemented :-
-
-"""
-
-
 with st.echo(code_location='below'):
-    st.title("IndicNLP")
-    
+    st.title("IndicNLP!")
+    st.text("This is our Final Year Project,")
+    st.text("Implementing various features of NLP i.e,")
+    st.text("Natural Language Processing in Various Indic Languages.")
+    st.text("To Begin with Hindi,")
+    st.text("Here are Few Modules we have Implemented :-")
     st.header('Part-Of-Speech, PoS-Tagging :- ')
     pos_ip = st.text_input('Enter a Statement')
     pos_btn = st.button("Process")
