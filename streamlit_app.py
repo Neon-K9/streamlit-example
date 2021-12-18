@@ -8,6 +8,13 @@ st.text("Natural Language Processing in Various Indic Languages.")
 st.text("To Begin with Hindi,")
 st.text("Here are Few Modules we have Implemented :-")
 
+import streamlit as st
+
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
+
 st.header('Part-Of-Speech, PoS-Tagging :- ')
 pos_ip = st.text_input('Enter a Statement')
 pos_btn = st.button("Process")
