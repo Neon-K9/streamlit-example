@@ -1,8 +1,6 @@
 import streamlit as st
-from st_annotated_text import annotated_text
 
 st.title("IndicNLP!")
-
 st.text("This is our Final Year Project,")
 st.text("Implementing various features of NLP i.e,")
 st.text("Natural Language Processing in Various Indic Languages.")
@@ -17,21 +15,11 @@ add_selectbox = st.sidebar.selectbox(
 if add_selectbox == "Part-of-Speech Tagging" :
 	st.header('Part-Of-Speech, PoS-Tagging :- ')
 	pos_ip = st.text_input('Enter a Statement')
+	st.header('Part-Of-Speech, PoS-Tagging :- ')
+	pos_ip = st.text_input('Enter a Statement')
 	pos_btn = st.button("Process")
 	if pos_btn:
-		annotated_text(
-			"This ",
-			("is", "verb", "#8ef"),
-			" some ",
-			("annotated", "adj", "#faa"),
-			("text", "noun", "#afa"),
-			" for those of ",
-			("you", "pronoun", "#fea"),
-			" who ",
-			("like", "verb", "#8ef"),
-			" this sort of ",
-			("thing", "noun", "#afa"),
-		)
+	    st.error("work's in progress :construction:, Come again later :smiley:")
 
 if add_selectbox == "Questiom & Answer" :
 	st.header('Question & Answering :- ')
