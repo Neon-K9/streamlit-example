@@ -15,8 +15,6 @@ add_selectbox = st.sidebar.selectbox(
 if add_selectbox == "Part-of-Speech Tagging" :
 	st.header('Part-Of-Speech, PoS-Tagging :- ')
 	pos_ip = st.text_input('Enter a Statement')
-	st.header('Part-Of-Speech, PoS-Tagging :- ')
-	pos_ip = st.text_input('Enter a Statement')
 	pos_btn = st.button("Process")
 	if pos_btn:
 	    st.error("work's in progress :construction:, Come again later :smiley:")
