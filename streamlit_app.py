@@ -1,4 +1,5 @@
 import streamlit as st
+from annotated_text import annotated_text
 
 st.title("IndicNLP!")
 
@@ -18,7 +19,19 @@ if add_selectbox == "Part-of-Speech Tagging" :
 	pos_ip = st.text_input('Enter a Statement')
 	pos_btn = st.button("Process")
 	if pos_btn:
-	    st.error("work's in progress :construction:, Come again later :smiley:")
+		annotated_text(
+			"This ",
+			("is", "verb", "#8ef"),
+			" some ",
+			("annotated", "adj", "#faa"),
+			("text", "noun", "#afa"),
+			" for those of ",
+			("you", "pronoun", "#fea"),
+			" who ",
+			("like", "verb", "#8ef"),
+			" this sort of ",
+			("thing", "noun", "#afa"),
+		)
 
 if add_selectbox == "Questiom & Answer" :
 	st.header('Question & Answering :- ')
