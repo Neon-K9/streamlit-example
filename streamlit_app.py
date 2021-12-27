@@ -15,10 +15,12 @@ add_selectbox = st.sidebar.selectbox(
 if add_selectbox == "Part-of-Speech Tagging" :
 	st.header('Part-Of-Speech, PoS-Tagging :- ')
 	pos_ip = st.text_input('Enter a Statement')
-	pos_btn = st.button("Process")
+	pos_btn = st.button("Predict")
 	if pos_btn:
-	    st.error("work's in progress :construction:, Come again later :smiley:")
-
+		st.success("work's in progress :construction:, Come again later :smiley:")
+		prediction = ''' This Example of Predicted Text '''
+		st.download_button("Export", prediction)
+		
 if add_selectbox == "Questiom & Answer" :
 	st.header('Question & Answering :- ')
 	text = st.text_area("Text to analyze")
